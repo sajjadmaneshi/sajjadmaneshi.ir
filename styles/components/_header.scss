@@ -1,0 +1,40 @@
+.navbar{
+  border-width: 1px;
+  border-style: solid;
+  border-top: none;
+  border-image:  linear-gradient(90deg, rgba(2,7,42,1) 0%, rgba(203,244,0,0.2) 53%, rgba(2,7,42,1) 100%) 1;
+  .navbar-brand{
+    font-size: 1rem;
+  }
+}
+
+#navbarNavDropdown{
+  flex-basis: auto;
+  flex-grow: 1;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  #navbarNavDropdown > .navbar-nav{
+    padding: 0.25rem!important;
+    border: 1px solid rgba(155,0,244,0.2);
+    background-color: rgba(155,0,244,0.1);
+    border-radius: 100px;
+  }
+}
+
+
+.nav-item>.nav-link{
+  color: white!important;
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+}
+
+.course-button{
+  min-width: 150px;
+  color: var(--bg-color-dark);
+  background: #cbf400;
+}

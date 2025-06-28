@@ -1,0 +1,141 @@
+
+#card-body-inner-0   {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+  .card-image{
+    margin-top: -10%;
+    img{
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+#card-body-inner-1,#card-body-inner-2,#card-body-inner-3{
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#card-body-inner-1 {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-color-dark);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--bg-color-dark);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #FFF;
+    background-image: -webkit-linear-gradient(top,
+            #f4f6e7 0%,
+            #f1f8cc 50%,
+            #e7f69c 51%,
+            #cbf400 100%);
+  }
+}
+
+.contact-info li{
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.contact-info li .icon{
+  margin-left: 0.5rem;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);;
+  color: var(--bg-color-dark);
+  transition: background-color 0.5s ease;
+}
+.contact-info li:hover .icon{
+  color: white;
+  background-color: var(--main-color);
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+.btn-13 {
+  background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+  border: none;
+  z-index: 1;
+}
+.btn-13:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  box-shadow:
+          -7px -7px 20px 0px #fff9,
+          -4px -4px 5px 0px #fff9,
+          7px 7px 20px 0px #0002,
+          4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-13:hover {
+  color: #fff;
+}
+.btn-13:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-13:active {
+  top: 2px;
+}
+
+
+.submit-btn{
+  border: none;
+  background-color: transparent;
+}
+
+@keyframes barberpole {
+  100% {
+    background-position: 50% 50%;
+  }
+}

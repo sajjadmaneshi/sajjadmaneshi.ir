@@ -1,0 +1,168 @@
+.accordion-item {
+  background: rgba(255, 255, 255, 0.25) !important;
+  color: white !important;
+}
+
+.accordion-button {
+  background-color: inherit !important;
+  color: white !important;
+  text-align: right;
+}
+
+.accordion-button:after {
+  font-family: "FontAwesome";
+  content: "+";
+  margin-right: auto;
+  margin-left: 0;
+  background-image: unset;
+}
+
+.accordion-button:not(.collapsed)::after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  background-image: unset;
+}
+
+.accordion-button:focus {
+  box-shadow: unset !important;
+  border: unset !important;
+}
+
+* {
+  line-height: 2 !important;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  direction: rtl;
+  border-radius: 1rem !important;
+}
+
+.course-base-info > * {
+  line-height: 2;
+}
+
+.rates i {
+  margin: 0 0.15rem;
+}
+
+.section-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #787878;
+  border-radius: 1rem !important;
+}
+
+.fa-solid {
+  vertical-align: middle !important;
+}
+
+.section-info > span {
+  padding: 0.5rem;
+}
+
+.course-info .section-info > span:first-child {
+  border-left: 1px solid #787878;
+}
+
+.course-details {
+  /*margin: 0 5rem;*/
+}
+
+.course-description {
+  line-height: 2;
+}
+
+.course-meta {
+  display: unset !important;
+  margin: 0;
+  list-style: none;
+}
+
+.course-meta li {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.register-course-button {
+  background-color: var(--main-color);
+  color: var(--bg-color-dark);
+  font-weight: bolder;
+}
+
+.symbol-avatar {
+  width: 7rem;
+  height: 7rem;
+}
+
+.symbol-avatar img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.accordion-body > ul {
+  list-style: unset;
+  display: block !important;
+}
+
+.accordion-body > ul > li {
+  text-align: right;
+}
+
+.btn-bg-success {
+  background-color: #bfff00 !important;
+  color: black !important;
+}
+
+.circle-pulse {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.pulse {
+  animation: pulse-animation 1s infinite;
+}
+
+.green {
+  background: #66FF99;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(147, 245, 1, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(147, 245, 1, 0.59);
+  }
+}
+.course-details > * {
+  line-height: 2.2;
+}
+
+.advantage, .disadvantage {
+  display: block !important;
+}
+
+.advantage > li, .disadvantage > li {
+  list-style: disc !important;
+  text-align: start !important;
+}
+
+pre {
+  border-radius: 0.5rem;
+}
+
+code[class*=language-], pre[class*=language-] {
+  line-height: 0.5rem !important;
+}
+
+.angular17-img{
+  border-radius: 1rem!important;
+}
+
+/*# sourceMappingURL=course-details.css.map */

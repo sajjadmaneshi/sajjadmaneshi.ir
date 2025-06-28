@@ -1,0 +1,25 @@
+
+
+
+nav{
+z-index: 1;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav{
+        margin-bottom: 3rem;
+    }
+
+}
+
+
+
+.nav-item {
+    cursor: pointer;
+}
+
+
+.nav-item.selected {
+    color: #F45050;
+    transition: 0.1s all ease;
+}
+

@@ -1,0 +1,26 @@
+.accordion-item{
+    background: rgba( 255, 255, 255, 0.25 )!important;
+    color: white!important;
+}
+.accordion-button{
+    background-color: inherit!important;
+    color: white!important;
+    text-align: right;
+}
+.accordion-button:after{
+    font-family: 'FontAwesome';
+    content:'\2b' ;
+    margin-right: auto;
+    margin-left: 0;
+  background-image: unset;
+}
+.accordion-button:not(.collapsed)::after{
+    font-family: 'FontAwesome';
+    content: '\f068';
+    background-image: unset;
+
+}
+.accordion-button:focus{
+    box-shadow: unset!important;
+    border: unset!important;
+}

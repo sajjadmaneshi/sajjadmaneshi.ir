@@ -1,0 +1,30 @@
+.custom-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px; /* Customize the left and right padding as needed */
+  padding-right: 20px;
+}
+
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 540px; /* Adjust the maximum width for small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 720px; /* Adjust the maximum width for medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 960px; /* Adjust the maximum width for large screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-container {
+    max-width: 1500px; /* Adjust the maximum width for extra-large screens */
+  }
+}

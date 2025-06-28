@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+.glass-card{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    .main-card-body{
+        height: 100%;
+        padding: 1rem;
+    }
+
+}
+
+.main{
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    flex-direction: column;
+
+    .instagram-card {
+        position: relative;
+        background: linear-gradient(90deg, rgba(143, 51, 196, 1) 0%, rgba(213, 42, 120, 1) 50%, rgba(244, 102, 42, 1) 100%);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: none;
+        width: 100%;
+        margin-top: 10%;
+        min-height: 6rem !important;
+        transition: background-color 0.5s ease;
+
+         > .card-body {
+            font-weight: bold;
+            .instagram-img {
+                position: absolute;
+                > img {
+                    border: 5px solid #ffffff;
+                    max-height: 150px;
+                    max-width: 150px;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+        &:hover {
+            background: linear-gradient(90deg, rgba(244, 102, 42, 1) 0%, rgba(213, 42, 120, 1) 50%, rgba(143, 51, 196, 1) 100%);
+        }
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .instagram-card{
+        padding-top: 20%;
+        margin-top: 15%!important;
+        .instagram-img{
+            left: 50%;
+            top: 10%;
+            transform: translate(-50%,-50%);
+            >img{
+                width: 7rem;
+                height:7rem;
+            }
+        }
+    }
+
+
+}
+@media (min-width: 768px) {
+    .instagram-card{
+        padding-right: 20%;
+        .instagram-img{
+            right: 5%;
+            bottom: 10%;
+            >img{
+                width: 9rem;
+                height:9rem;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .gradient {
+        position: fixed;
+        left: 30%;
+        top: 30%;
+        --size: 250px;
+        --speed: 50s;
+        --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+        width: var(--size);
+        height: var(--size);
+        filter: blur(calc(var(--size) / 5));
+        background: rgb(21,0,80);
+        background: linear-gradient(90deg, rgba(21,0,80,1) 0%, rgba(155,0,244,1) 100%);
+        animation: rotate var(--speed) var(--easing) alternate infinite;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+
+    @media (min-width: 720px) {
+        .gradient {
+            --size: 500px;
+        }
+    }
+
+
+
+
+
+
+    .loading{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: fixed;
+        z-index: 3;
+        background-color: var(--bg-color-dark);
+        transition: opacity 0.5s,visibility 0s linear 0.5s;
+    }
+
+    .loading::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: calc(50% - 1.8em);
+        left: calc(50% - 1.8em);
+        width: 3.6em;
+        height: 3.6em;
+        border: 0.2em solid  ;
+        border-color: var(--main-color) transparent transparent var(--main-color);
+        border-radius: 50%;
+        -webkit-animation: loading 1s infinite 0.11s;
+        animation: loading 1s infinite 0.11s;
+    }
+    .loading::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: calc(50% - 1.2em);
+        left: calc(50% - 1.2em);
+        width: 2.4em;
+        height: 2.4em;
+        border: 0.2em solid  ;
+        border-color:  var(--main-color) transparent transparent  var(--main-color);
+        border-radius: 50%;
+        -webkit-animation: loading 1s infinite 0.33s;
+        animation: loading 1s infinite 0.33s;
+    }
+    .circle{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: 0.2em solid ;
+        border-color: var(--main-color) transparent transparent  var(--main-color);
+        -webkit-animation: loading 1s infinite 0.44s;
+        animation: loading 1s infinite 0.44s;
+    }
+    @-webkit-keyframes loading{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes loading{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    #loading-screen.loaded {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+
+
+

@@ -1,0 +1,16 @@
+{
+  "name": "typescript-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "lite-server",
+    "build": "node-sass styles.scss styles.css && minify main.js > main.min.js -o dist"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "minify": "^10.5.2",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.0"
+  }
+}

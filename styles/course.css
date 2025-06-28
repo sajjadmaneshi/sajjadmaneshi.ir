@@ -1,0 +1,50 @@
+.course-info{
+
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% )!important;
+    transition: all 0.5s;
+}
+.course-info img{
+    height: 10rem;
+}
+.course-info:hover{
+
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(12,116,117,1) 0% , rgba(14,174,87,1) 90%)!important;
+}
+
+.register{
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    right: 0;
+    left: 0;
+}
+.card{
+
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+direction: rtl;
+}
+.product-item{
+ display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-item img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0 ;
+}
+.badge{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.card{
+    transition: all 0.1s ease-in-out;
+}
+.card:not(.course-info):hover{
+    scale: 1.02;
+    box-shadow: -1px -4px 5px 4px rgba(20,0,244,0.4);
+    -webkit-box-shadow: -1px -4px 5px 4px rgba(20,0,244,0.4);
+    -moz-box-shadow: -1px -4px 5px 4px rgba(20,0,244,0.4);
+}
