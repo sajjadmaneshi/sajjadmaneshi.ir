@@ -5,17 +5,15 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
     <url>
-        <loc>https://sajjadmaneshi.com/</loc>
+        <loc>https://sajjadmaneshi.ir/</loc>
         <lastmod>2023-06-28T05:19:24+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://sajjadmaneshi.com/course</loc>
+        <loc>https://sajjadmaneshi.ir/course</loc>
         <lastmod>2023-06-27T11:01:46+00:00</lastmod>
         <priority>0.80</priority>
     </url>
-
 
 </urlset>
