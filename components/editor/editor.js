@@ -5,8 +5,8 @@ let code =
   "export class MyInfo {\n" +
   "    birthday:string='11 june 1995';\n" +
   "    city:string='Shiraz, Iran';\n" +
-  "    age:number=28;\n" +
-  "    phone:string='+98 939 424 1607';\n" +
+  "    age:number=30;\n" +
+  "    phone:string='+98 917 624 8563';\n" +
   "    email:string=maneshisajjad@gmail.com;\n" +
   "}\n";
 
