@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="js/prism/prism.css">
-
+    <link rel="canonical" href="https://sajjadmaneshi.ir/" />
     <link rel="stylesheet" href="packages/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="main.css">
@@ -416,5 +416,17 @@
 
 
 <script src="main.js" type="module" defer></script>
+<script>
+    // Canonical domain
+    const canonical = "https://sajjadmaneshi.ir";
+
+    if (
+        window.location.hostname === "www.sajjadmaneshi.ir" ||
+        window.location.protocol === "http:"
+    ) {
+        window.location.href = canonical + window.location.pathname + window.location.search;
+    }
+</script>
+
 
 </html>
