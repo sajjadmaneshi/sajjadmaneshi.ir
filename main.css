@@ -97,8 +97,8 @@
   width: var(--size);
   height: var(--size);
   filter: blur(calc(var(--size) / 5));
-  background: rgb(21, 0, 80);
-  background: linear-gradient(90deg, rgb(21, 0, 80) 0%, rgb(155, 0, 244) 100%);
+  background: rgba(0, 221, 221, 0.9);
+  background: linear-gradient(90deg, rgb(73 119 119) 0%, rgb(61, 190, 248) 100%);
   animation: rotate var(--speed) var(--easing) alternate infinite;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
 }
@@ -402,8 +402,8 @@
 @media (min-width: 769px) {
   #navbarNavDropdown > .navbar-nav {
     padding: 0.25rem !important;
-    border: 1px solid rgba(155, 0, 244, 0.2);
-    background-color: rgba(155, 0, 244, 0.1);
+    border: 1px solid rgba(0, 221, 221, 0.2);
+    background-color: rgba(0, 221, 221, 0.1);
     border-radius: 100px;
   }
 }
@@ -419,20 +419,21 @@
 .course-button {
   min-width: 150px;
   color: var(--bg-color-dark);
-  background: #cbf400;
+  background: #00dddd;
 }
 
 #card-body-inner-0 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
   position: relative;
+  direction: rtl;
 }
 #card-body-inner-0 .card-image {
-  margin-top: -10%;
+  margin-top: -35%;
 }
 #card-body-inner-0 .card-image img {
-  width: 100%;
+  width:100%;
   height: auto;
   max-width: 100%;
 }
@@ -454,7 +455,7 @@
 #card-body-inner-1::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #FFF;
-  background-image: -webkit-linear-gradient(top, #f4f6e7 0%, #f1f8cc 50%, #e7f69c 51%, #cbf400 100%);
+  background-image: -webkit-linear-gradient(top, #f2fafa 0%,  #b0f3f3 50%, #87f1f1 51%, #00dddd 100%);
 }
 
 .contact-info li {
@@ -546,7 +547,7 @@
 :root {
   --bg-color-dark:#02072a;
   --text-color-dark:#ffffff;
-  --main-color:#cbf400;
+  --main-color:#00dddd;
 }
 
 * {
@@ -606,3 +607,4 @@ a {
 }
 
 /*# sourceMappingURL=main.css.map */
+/*linear-gradient(90deg, rgb(73 119 119) 0%, rgb(61, 190, 248) 100%);*/
