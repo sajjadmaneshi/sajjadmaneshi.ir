@@ -605,6 +605,12 @@ a {
 .menu-bar li a > i {
   font-size: 1.5rem;
 }
+code.not-pre {
+  padding: 0.25rem;
+  border-radius: 15px;
+  color: white!important;
+  background-color: #424242!important;
+}
 
 /*# sourceMappingURL=main.css.map */
 /*linear-gradient(90deg, rgb(73 119 119) 0%, rgb(61, 190, 248) 100%);*/

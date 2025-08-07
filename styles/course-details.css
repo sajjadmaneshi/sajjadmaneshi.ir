@@ -114,7 +114,7 @@
 }
 
 .btn-bg-success {
-  background-color: #bfff00 !important;
+  background-color: var(--main-color) !important;
   color: black !important;
 }
 
@@ -163,6 +163,60 @@ code[class*=language-], pre[class*=language-] {
 
 .angular17-img{
   border-radius: 1rem!important;
+}
+.angular-pros-cons {
+  width: 100%;
+  background-color: #454545;
+  border: 1px solid #4f4f4f;
+  border-radius: 12px;
+  padding: 20px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  direction: rtl;
+}
+
+.angular-pros-cons h3 {
+  text-align: center;
+  color: #dd0031;
+  margin-bottom: 15px;
+}
+
+.angular-pros-cons h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.1em;
+  border-right: 3px solid #fff;
+  padding-right: 8px;
+}
+
+.angular-pros-cons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.angular-pros-cons li {
+  background-color: #f5f5f5;
+  color: #454545;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  position: relative;
+  padding: 10px 35px 10px 15px;
+}
+
+.pros li::before {
+  content: "✅";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cons li::before {
+  content: "❌";
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 /*# sourceMappingURL=course-details.css.map */
